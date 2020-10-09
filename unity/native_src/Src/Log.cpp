@@ -54,6 +54,7 @@ void PLog(LogLevel Level, const std::string Fmt, ...)
     }
     else if (Level == Error && GLogErrorCallback)
     {
+
         GLogErrorCallback(SLogBuffer);
     }
 }
